@@ -20,6 +20,7 @@ class controler:
         
         if chg <= 0 or chg > len(self.colors):
             print("Wrong input")
+            return 0
         
         message = binascii.unhexlify(self.colors[chg])
         
